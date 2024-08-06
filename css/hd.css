@@ -29,16 +29,20 @@ a {
   padding: 8px 0;
 }
 #hd div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  #hd div {
+    padding: 0 15px;
+  }
 }
 #hd div h1 {
   max-width: 180px;
-  min-width: 26vw;
+  width: 26vw;
 }
 #hd div h1 a {
   display: block;
@@ -52,18 +56,15 @@ a {
 }
 @media (max-width: 767px) {
   #hd div ul {
-    display: block;
     position: fixed;
-    top: 34px;
     left: 100%;
-    width: 100%;
-    bottom: 0;
-    background-color: black;
     transition: 0.5s;
-    display: flex;
+    width: 100%;
+    background-color: black;
+    top: 35px;
+    bottom: 0;
     flex-direction: column;
     justify-content: center;
-    padding-left: 15px;
   }
 }
 #hd div ul li {
@@ -72,9 +73,9 @@ a {
 }
 @media (min-width: 768px) {
   #hd div ul li {
-    margin-right: 0;
+    font-size: 22px;
     margin-left: 30px;
-    font-size: 18px;
+    margin-right: 0;
   }
 }
 #hd div ul li a {
@@ -82,9 +83,9 @@ a {
 }
 
 #m_menu {
-  width: 28px;
   background-color: transparent;
   border: 0;
+  width: 30px;
 }
 @media (min-width: 768px) {
   #m_menu {
@@ -92,11 +93,10 @@ a {
   }
 }
 #m_menu span {
-  height: 2px;
   display: block;
+  height: 2px;
   background-color: white;
   transition: 0.5s;
-  width: 100%;
 }
 #m_menu span:nth-child(2) {
   margin: 5px 0;
